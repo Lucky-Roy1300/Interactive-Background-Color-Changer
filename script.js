@@ -1,7 +1,7 @@
 const container = document.querySelector('.container');
 const btn = document.getElementById('changeColorBtn');
 
-// 30 pastel/light colors
+
 const pastelColors = [
     "#FFB3BA", "#FFDFBA", "#FFFFBA", "#BAFFC9", "#BAE1FF",
     "#E0BBE4", "#FFDFD3", "#FFC4E1", "#FFECB3", "#D5F4E6",
@@ -15,5 +15,5 @@ let index = 0;
 
 btn.addEventListener('click', () => {
     container.style.backgroundColor = pastelColors[index];
-    index = (index + 1) % pastelColors.length; // loops through all colors
+    index = (index + 1) % pastelColors.length; 
 });
